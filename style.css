@@ -1,0 +1,107 @@
+/* 1. Base Styling and Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5fc;
+  color: #2e1f47;
+  transition: all 0.4s ease;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header, section, footer {
+  padding: 40px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #b388eb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* 2. Button Styling */
+#toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #b388eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#toggle-button:hover {
+  background-color: #a06cd5;
+  box-shadow: 0 0 12px #c084fc;
+  transform: scale(1.05);
+}
+
+/* 3. Dark Mode Styling */
+body.dark-mode {
+  background-color: #1e1e2f;
+  color: #f0eaff;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+  color: #d6a4ff;
+}
+
+body.dark-mode #toggle-button {
+  background-color: #d6a4ff;
+  color: #1e1e2f;
+}
+
+/* 4. Footer */
+footer {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+.social-buttons {
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 10px 5px 0;
+  background-color: #6c63ff; /* Purple base */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5a54d1;
+}
+
+.button.linkedin {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.button.linkedin:hover {
+  background-color: #005a8c;
+}
+
